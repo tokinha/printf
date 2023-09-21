@@ -29,7 +29,7 @@
 */
 typedef struct _format{
 	int sum;
-	int(*f)(va_list);
+	int(*f)(va_list, char[], int, int, int, int);
 }convert_format;
 int _printf(const char *format, ...);
 
